@@ -1,4 +1,4 @@
-#Direct Mailer#
+# Direct Mailer
 
 When considering email sending from node.js, the most popular way is to connect to your SMTP server and let the server send the mail for you.
 
@@ -24,7 +24,7 @@ const DirectMailer = require('direct-mailer');
 let mail = new DirectMailer('me@server.com', 'Chunlong');
 
 //send
-mail.send('some-one@other.com', 'subject here', 'content here').then(()=>{
+mail.send('someone@other.com', 'subject here', 'content here').then(()=>{
 	console.log('sent');
 }).catch(err=>{
 	console.error(err);
